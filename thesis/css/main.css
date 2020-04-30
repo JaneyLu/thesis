@@ -1,0 +1,331 @@
+
+.background {
+  position: fixed;
+  background-color:#FFFAF2;
+  top: -18%;
+  left: 11%;
+  width: 130%;
+  height: 140%;
+}
+
+.header{
+    position: fixed;
+    display: inline;
+    text-align: right;
+    margin-left: 89%;
+}
+
+/* 1. Intro Keyframe
+--------------------------------------- */
+#intro {
+  position: fixed;
+  top: 25%;
+  left: 4%;
+  width: 80%;
+  color: #E56B58;
+  text-align: left;
+  /*text-transform:uppercase;*/
+}
+
+.wrapper {
+  display: none;
+}
+
+.name {
+  font-size: 200px;
+  letter-spacing: 0px;
+  line-height: .8;
+  font-weight: 100;
+  font-family: 'Optima', sans-serif;
+}
+
+.text {
+  font-size:  
+}
+
+/* 2. story 1 position & disappearance
+--------------------------------------- */
+#explosion{
+  top: 10%;
+  width: 75%;
+  height: 100%;
+  margin-left: -22%;
+  color:#FEE7D2; 
+}
+
+.explosion-byline{
+  display: inline;
+  position: relative;
+  letter-spacing: .2pt;
+  top: 100%;
+  left: 35%;
+  opacity: 0; 
+  line-height: 90px;
+  color:#FEE7D2;
+  max-width: 55%;
+  font-size: 80px;
+}
+
+
+/* 3. cover image hover effect
+--------------------------------------- */
+.pointer {cursor: url("../img/cursor-redheart.png") , auto !important;}
+
+.hover-title {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.hover-image {
+    visibility: hidden;
+}
+
+.hover-title:hover + .hover-image {
+    visibility: visible;
+    pointer-events: visible;
+}
+
+.hover-image {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+}
+
+.hover-image img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 0;
+}
+
+/* 5. content text styles*/
+.stories{
+    font-size: 45px; 
+    line-height: 65px;
+    margin-bottom: 80px;
+    color:#615f5b;
+    max-width: 70%;
+    left: 16%;
+    position: relative;
+}
+
+
+#img {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  background-position: right;
+  text-rendering: optimizeLegibility;
+}
+
+.image-wrap{
+  position: fixed;
+  top: -20%;
+  left: 15%;
+  width: 80%;
+  height: 100%; 
+}
+
+
+/*------- 6. Image scroll animation -------- */
+
+.rosebuds img:nth-child(1) {
+  opacity:1;
+}
+.rosebuds img:nth-child(2) {
+  opacity:0;
+}
+.rosebuds img:nth-child(3) {
+  opacity:0;
+}
+.rosebuds img:nth-child(4) {
+  opacity:0;
+}
+.rosebuds img:nth-child(5) {
+  opacity:0;
+}
+.rosebuds img:nth-child(6) {
+  opacity:0;
+}
+.rosebuds img:nth-child(7) {
+  opacity:0;
+}
+.rosebuds img:nth-child(8) {
+  opacity:0;
+}
+
+@keyframes change1 {
+  0%   { opacity: 1; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 0; }
+  75% { opacity: 0; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change2 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 1; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 0; }
+  75% { opacity: 0; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change3 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 1; }
+  37.5% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 0; }
+  75% { opacity: 0; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change4 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 1; }
+  50% { opacity: 0; }
+  62.5% { opacity: 0; }
+  75% { opacity: 0; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change5 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 0; }
+  50% { opacity: 1; }
+  62.5% { opacity: 0; }
+  75% { opacity: 0; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change6 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 1; }
+  75% { opacity: 0; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change7 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 0; }
+  75% { opacity: 1; }
+  87.5% { opacity: 0; }
+}
+
+@keyframes change8 {
+  0%   { opacity: 0; }
+  12.5%  { opacity: 0; }
+  25%  { opacity: 0; }
+  37.5% { opacity: 0; }
+  50% { opacity: 0; }
+  62.5% { opacity: 0; }
+  75% { opacity: 0; }
+  87.5% { opacity: 1; }
+}
+
+.active .roseb1 {
+  -webkit-animation: change1 20s infinite;/* Safari 4.0 - 8.0 */
+  animation: change1 20s infinite !important;
+}
+
+.active .roseb2 {
+  -webkit-animation: change2 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: change2 20s infinite !important;
+}
+
+.active .roseb3 {
+  -webkit-animation: change3 20s infinite;/* Safari 4.0 - 8.0 */
+  animation: change3 20s infinite;
+}
+
+.active .roseb4 {
+  -webkit-animation: change4 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: change4 20s infinite;
+}
+
+.active .roseb5 {
+  -webkit-animation: change5 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: change5 20s infinite;
+}
+
+.active .roseb6 {
+  -webkit-animation: change6 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: change6 20s infinite;
+}
+
+.active .roseb7 {
+  -webkit-animation: change7 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: change7 20s infinite;
+}
+
+.active .roseb8 {
+  -webkit-animation: change8 20s infinite; /* Safari 4.0 - 8.0 */
+  animation: change8 20s infinite;
+}
+
+.rosebuds img:nth-child(1) {
+  position:absolute;
+}
+
+.roseb1, .roseb2, .roseb3, .roseb4, .roseb5, .roseb6, .roseb7, .roseb8 img {
+position:absolute !important;
+}
+
+
+/*--------- 7. top bar progress scroll ----------*/
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 5s linear;
+  z-index: 100;
+}
+
+@keyframes progress {
+  to {
+    background-color: #E56B58;
+    width: 100%;
+  }
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+
